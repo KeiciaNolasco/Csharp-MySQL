@@ -4,12 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using SalesWebMvc.Models;
 using SalesWebMvc.Models.Enums;
+using Microsoft.AspNetCore.Builder;
 
 namespace SalesWebMvc.Data
 {
     public class SeedingService
     {
-        private readonly SalesWebMvcContext _context;
+        private SalesWebMvcContext _context;
 
         public SeedingService(SalesWebMvcContext context)
         {
